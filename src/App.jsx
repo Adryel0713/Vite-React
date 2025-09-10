@@ -1,14 +1,10 @@
-import Footer from "./Components/Footer";
-import Header from "./Components/Header";
-import MainContent from "./Components/MainContent";
+import WelcomeMessage from "./Components/WelcomeMessage";
 
 const App = () => {
   
   return (
   <div>
-    <Header/>
-    <MainContent/>
-    <Footer/>
+    <WelcomeMessage/>
   </div>
   )
 
