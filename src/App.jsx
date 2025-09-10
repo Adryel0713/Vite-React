@@ -1,10 +1,12 @@
-import WelcomeMessage from "./Components/WelcomeMessage";
+import Greeting from "./Components/Greeting";
+import ProductInfo from "./Components/ProductInfo";
 
 const App = () => {
   
   return (
   <div>
-    <WelcomeMessage/>
+    <Greeting/>
+    <ProductInfo/>
   </div>
   )
 
