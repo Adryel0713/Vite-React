@@ -1,47 +1,24 @@
-import ProductList from "./Components/ProductList";
-import UserList from "./Components/UserList";
+// import Person from "./Components/Person"
+// import Product from "./Components/Product"
+
+import Card from "./Components/Card"
 
 const App = () => {
-  const userInfo = [
-    {
-      username: "HuXn",
-      email: "teste@gmail.com",
-      location: "USA",
-    },
-    {
-      username: "John",
-      email: "jd@gmail.com",
-      location: "Arab",
-    },
-    {
-      username: "Alex",
-      email: "alexmersion@gmail.com",
-      location: "India",
-    }
-  ]
   return (
-  <main>
-    {/* { userInfo.map(user => (
-      <ul key={user}>
-        <li>Username: {user.username}</li>
-        <li>Email: {user.email}</li>
-        <li>Location: {user.location}</li>
-      </ul>
-    ))} */}
-    {/* { userInfo.map(({username,email,location}) => (
-      <ul key={Math.random()}>
-        <li>{username}</li>
-        <li>{email}</li>
-        <li>{location}</li>
-      </ul>
-    ))} */}
+    <div>
+      {/* <Person name="Adryel" age={22}/>
+      <Product name="cadeira" price={125.00}/> */}
 
-    <UserList/>
-    <br /> <br />
-    <ProductList/>
-  </main>
+      <Card>
+        <h1>My Card 1</h1>
+        <p>This is some content for card 1</p>
+      </Card>
+      <Card>
+        <h1>My Card 2</h1>
+        <p>This is some content for card 2</p>
+      </Card>
+    </div>
   )
-
 }
 
-export default App;
+export default App
