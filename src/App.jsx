@@ -1,23 +1,14 @@
-// import Person from "./Components/Person"
-// import Product from "./Components/Product"
-
-import Card from "./Components/Card"
+import Greeting from "./Components/Greeting"
+import UserStatus from "./Components/UserStatus"
+import Weather from "./Components/Weather"
 
 const App = () => {
   return (
-    <div>
-      {/* <Person name="Adryel" age={22}/>
-      <Product name="cadeira" price={125.00}/> */}
-
-      <Card>
-        <h1>My Card 1</h1>
-        <p>This is some content for card 1</p>
-      </Card>
-      <Card>
-        <h1>My Card 2</h1>
-        <p>This is some content for card 2</p>
-      </Card>
-    </div>
+    <section>
+      <Weather temperature={25.5}/>
+      <UserStatus/>
+      <Greeting timeOfDay="Morning"/>
+    </section>
   )
 }
 
