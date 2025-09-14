@@ -1,13 +1,13 @@
-import Greeting from "./Components/Greeting"
-import UserStatus from "./Components/UserStatus"
-import Weather from "./Components/Weather"
+import IonComponent from "./Components/IonComponent"
+import ProfileCard from "./Components/ProfileCard"
+import StyledCard from "./Components/StyledCard"
 
 const App = () => {
   return (
     <section>
-      <Weather temperature={25.5}/>
-      <UserStatus/>
-      <Greeting timeOfDay="Morning"/>
+      <StyledCard />
+      <ProfileCard />
+      <IonComponent />
     </section>
   )
 }
