@@ -1,13 +1,15 @@
-import IonComponent from "./Components/IonComponent"
-import ProfileCard from "./Components/ProfileCard"
-import StyledCard from "./Components/StyledCard"
+import Counter from "./Components/Counter"
+import Profile from "./Components/Profile"
+import ShoppingList from "./Components/ShoppingList"
+import ToDoList from "./Components/ToDoList"
 
 const App = () => {
   return (
     <section>
-      <StyledCard />
-      <ProfileCard />
-      <IonComponent />
+      {/* <Counter/> */}
+      {/* <ToDoList /> */}
+      {/* <Profile /> */}
+      <ShoppingList />
     </section>
   )
 }
