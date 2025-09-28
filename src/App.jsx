@@ -1,10 +1,10 @@
-import CopyInput from "./Components/CopyInput"
+import Switcher from "./Components/Switcher"
 
 const App = () => {
   return (
     <section>
 
-      <CopyInput />
+      <Switcher />
 
     </section>
   )
