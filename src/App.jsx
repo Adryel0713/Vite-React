@@ -1,16 +1,15 @@
-import BasicEffect from "./Components/BasicEffect"
-import CounterEffect from "./Components/CounterEffect"
-import FetchDataEffect from "./Components/FetchDataEffect"
+import { createContext } from "react"
+import Componenta2 from "./Components/Componenta2";
+
+export const Data = createContext();
 
 const App = () => {
 
 
   return (
-    <div>
-      {/* <BasicEffect /> */}
-      {/* <CounterEffect/> */}
-      <FetchDataEffect />
-    </div>
+    <Data.Provider value={"adryel"}>
+      <Componenta2 />
+    </Data.Provider>
   )
 }
 
