@@ -1,15 +1,22 @@
 import { createContext } from "react"
-import Componenta2 from "./Components/Componenta2";
+import Component1 from "./Components/Component1"
 
-export const Data = createContext();
+export const Data = createContext()
+export const Data2 = createContext()
 
 const App = () => {
 
+  const name = "Adryel"
+  const age = 22;
 
   return (
-    <Data.Provider value={"adryel"}>
-      <Componenta2 />
+  <div>
+    <Data.Provider value={name}>
+      <Data2.Provider value={age}>
+        <Component1 />
+      </Data2.Provider>
     </Data.Provider>
+  </div>
   )
 }
 
