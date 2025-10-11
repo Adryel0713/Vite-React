@@ -1,14 +1,13 @@
-import UseFetch from "./UseFetch"
+import { useId } from "react"
 
 const App = () => {
-
-  const [data] = UseFetch("https://jsonplaceholder.typicode.com/todos")
-  // data.slice(0,5)
+  const id = useId();
   return (
     <div>
-      {data && data.map(item => (
-        <li key={item.id}>{item.title}</li>
-      ))}
+      <label htmlFor={`${id}-email`}></label>
+      <input type="text" id={`${id}-email`} placeholder="email" /> <br /> <br />
+      <label htmlFor={`${id}-password`}></label>
+      <input type="password" id={`${id}-password`} placeholder="password"/>
     </div>
   )
 }
