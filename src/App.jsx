@@ -1,9 +1,13 @@
-import Counter from "./Components/Counter"
+import FocusInput from "./Components/FocusInput"
+import Timer from "./Components/Timer"
 
 const App = () => {
 
   return (
-    <Counter />
+    <div>
+      {/* <FocusInput /> */}
+      <Timer />
+    </div>
   )
 }
 
